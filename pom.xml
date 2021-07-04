@@ -27,6 +27,10 @@
 		</snapshotRepository>
 	</distributionManagement>
 
+	<scm>
+		<developerConnection>scm:git:https://github.com/tfreytag/WoPeD.git</developerConnection>
+	</scm>
+
 	<modules>
 		<module>WoPeD-BeanMetric</module>
 		<module>WoPeD-BeanConfiguration</module>
@@ -62,6 +66,12 @@
 				</configuration>
 				<inherited>false</inherited>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>3.0.0-M4</version>
+			</plugin>
+
 		</plugins>
 	</build>
 </project>
