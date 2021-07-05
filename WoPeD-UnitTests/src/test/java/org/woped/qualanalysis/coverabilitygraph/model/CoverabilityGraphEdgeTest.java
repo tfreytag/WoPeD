@@ -40,6 +40,7 @@ public class CoverabilityGraphEdgeTest {
         cut.addTrigger(t2);
 
         String expected = "create Something " + CoverabilityGraphEdge.TRANSITION_DELIMITER + " create Something else";
+        //String expected = "create Something else " + CoverabilityGraphEdge.TRANSITION_DELIMITER + " create Something";
         String actual = cut.toString();
 
         assertEquals(expected, actual);

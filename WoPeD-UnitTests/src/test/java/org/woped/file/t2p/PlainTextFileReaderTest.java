@@ -19,6 +19,7 @@ public class PlainTextFileReaderTest {
         for( String k: filetype) {
             sb = new StringBuilder();
             File file = new File(usrPath + "/tests/org/woped/file/t2p/test." + k);
+            //File file = new File(usrPath + "/src/test/java/org/woped/file/t2p/test." + k);
             switch (k) {
                 case "doc":
                 case "docx":
@@ -35,5 +36,4 @@ public class PlainTextFileReaderTest {
             assertTrue(sb.toString().contains("A manager is managing a project"));
             }
      }
-
 }
